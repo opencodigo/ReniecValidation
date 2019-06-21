@@ -1,0 +1,41 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string str = "valdivia|cruz|maria de los nievez juaquina";
+		
+		string[] names = str.Split('|'); 
+		
+		string nombres = names[names.Length - 1];
+		string[] nombreRaro=nombres.Split(' ');
+		int cont =1;
+		for(int i=0;i<nombreRaro.Length-1;i++){
+			if((nombreRaro[i]=="de" && nombreRaro[i+1]=="las") || (nombreRaro[i]=="de" && nombreRaro[i+1]=="los")){
+				cont--;
+				i++;
+			}
+			else if(nombreRaro[i]=="de" || nombreRaro[i]=="del" ){
+				
+			}else if(nombreRaro[i]=="la" || nombreRaro[i]=="las"){
+				
+			}
+			else{cont++;}
+		}
+		Console.WriteLine(str);
+		Console.WriteLine("-------------");
+		foreach(var element in names)
+			Console.WriteLine(element);
+		Console.WriteLine("-------------");
+		Console.WriteLine(nombres);
+		Console.WriteLine("------nombres-------");
+		foreach(var element in nombreRaro)
+			Console.WriteLine(element);
+		Console.WriteLine(cont);
+		
+		
+		
+			
+	}
+}
