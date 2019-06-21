@@ -1,0 +1,46 @@
+static void Main(string[] args)
+        {
+            //menu
+            string dni = "";
+            Boolean esAlumno = false;
+            string salir = "";
+            string respuestaReniec = "";
+            Console.WriteLine("\t\tVERIFICACIÓN DE ALUMNOS CODIGO");
+            do
+            {
+                do
+                {
+                    //VALIDAR QUE DNI TENGA 8 DIGITOS
+                    Console.Write("Ingrese número de DNI: ");
+                    dni = Console.ReadLine();
+                } while (dni.Length != 8);
+                esAlumno = BuscarAlumno(dni);
+                if(esAlumno == false)
+                {
+                    Console.WriteLine(">>Lo sentimos no es alumno de CODIGO");
+                    Console.WriteLine(">>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<");
+                }
+                else
+                {
+                    Console.WriteLine(">>> Estamos Validando en RENIEC... <<<");
+                    respuestaReniec = ConsultarReniec(dni);
+                    DividirNombre(respuestaReniec);
+                    Console.Write("Ingrese 'n/N' para salir del programa: ");
+                    salir = Console.ReadLine();
+                    salir = salir.ToString().ToUpper();
+                }
+            } while (salir != "N");
+        }
+
+static Boolean BuscarAlumno(string dni)
+        {
+            string[] alumnos = { "72117500", "74119617", "77657476", "71736721", "70652084", "71521063", "75211693", "43474669", "73131641", "43470033", "70748476", "72815887", "74690111", "47862719", "72313903", "72406945" };
+            foreach (var item in alumnos)
+            {
+                if( item == dni)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
