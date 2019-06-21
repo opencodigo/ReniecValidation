@@ -1,0 +1,7 @@
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\bin\Debug\Week4Day5ReniecApp.exe.config
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\bin\Debug\Week4Day5ReniecApp.exe
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\bin\Debug\Week4Day5ReniecApp.pdb
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\obj\Debug\Week4Day5ReniecApp.csprojAssemblyReference.cache
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\obj\Debug\Week4Day5ReniecApp.csproj.CoreCompileInputs.cache
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\obj\Debug\Week4Day5ReniecApp.exe
+C:\Users\Open Codigo\Google Drive\BackEnd\BACKEND_C#\Week4Day5ReniecApp\obj\Debug\Week4Day5ReniecApp.pdb
